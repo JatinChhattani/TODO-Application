@@ -46,7 +46,7 @@
 }
 
 .row input{
-    flex: 1;
+    /* flex: 1; */
     background: transparent;
     /* border: none; */
     padding: 15px 50px;
@@ -58,13 +58,19 @@
 
 .row button{
     background-color: #ff5945;
-    padding: 16px 50px;
+    padding: 16px 40px;
     font-size: 16px;
     border: none;
     outline: none;
     color: #fff;
     cursor: pointer;
     border-radius: 40px;
+}
+
+@media (max-width: 768px) {
+    .row button {
+        padding: 16px 35px; /* Adjust padding for smaller screens */
+    }
 }
 
 ul li{
